@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background-color: rgb(2, 28, 122);
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo {
+            width: 25%px;
+            float: left;
+            padding-top: 8px;
+            padding-left: 16px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .tieude {
+            width: 25%;
+            float: left;
+            color: white;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .menu {
+            float: right;
+            width: 30%;
+            text-align: right;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: large;
+            text-transform: uppercase;
+            line-height: 80px;
+        }
+
+        a:hover {
+            color: rgb(74, 213, 167);
+        }
+
+        /*end header*/
+        .main-content {
+            text-align: justify;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(251, 251, 251);
+        }
+
+        .conten-main {
+
+            margin-top: 15px;
+            display: flex;
+
+        }
+
+        .anh img {
+            width: 500px;
+        }
+
+        .ad img {
+            margin-left: 50px;
+            width: 350px;
+            height: 307px;
+        }
+
+        .ad img:hover {
+            opacity: 0.5;
+        }
+
+        .noidung {
+            margin-left: 20px;
+            width: 250px;
+            height: 300px;
+            padding-right: 10px;
+        }
+
+        .noidung h3 a {
+            text-decoration: none;
+            color: black;
+            text-align: left;
+            font-size: 28px;
+        }
+
+        .noidung h3 a:hover {
+            color: rgb(12, 181, 193);
+            cursor: pointer;
+        }
+
+        .noidung p {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .gach {
+            margin-top: 3px;
+            width: 770px;
+        }
+
+        .conten-extra {
+            display: flex;
+            padding-top: 10px;
+        }
+
+        .conten-phu-1 h4 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .conten-phu-1 {
+            cursor: pointer;
+            margin-top: 2px;
+            width: 216px;
+        }
+
+        .conten-phu-1 h4 a:hover {
+
+            color: rgb(12, 181, 193);
+        }
+
+        .conten-phu-1 p {
+            margin-top: 5px;
+        }
+
+        .conten-phu-2 {
+
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 2px;
+            width: 216px;
+        }
+
+        .conten-phu-2 h4 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .conten-phu-2 h4 a:hover {
+
+            color: rgb(12, 181, 193);
+        }
+
+        .conten-phu-2 p {
+            margin-top: 22px;
+        }
+
+        .conten-phu-3 {
+
+            margin-left: 20px;
+            cursor: pointer;
+            margin-top: 2px;
+            width: 216px;
+        }
+
+        .conten-phu-3 h4 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .conten-phu-3 h4 a:hover {
+
+            color: rgb(12, 181, 193);
+        }
+
+        .conten-phu-3 p {
+            margin-top: 6px;
+        }
+
+        .conten-extra hr {
+            margin-left: 22px;
+        }
+
+        .cuoi {
+            margin-top: 10px;
+        }
+
+        .phu-conten-extra {
+            width: 340px;
+            height: 139px;
+            padding: 10px 0 10px 0;
+        }
+
+        .phu-conten-extra p {
+            margin-top: 10px;
+            margin-bottom: 3px;
+            text-align: left;
+
+        }
+
+        .phu-conten-extra h4 {
+            cursor: pointer;
+        }
+
+        .phu-conten-extra h4:hover {
+            color: rgb(12, 181, 193);
+        }
+
+        .conten-extra-2 {
+            width: 40%;
+            display: inline-block;
+
+        }
+
+        .conten-to {
+            width: 60%;
+            float: right;
+
+        }
+
+        .conten-to h3 {
+            margin-top: 12px;
+            font-variant: small-caps;
+        }
+
+        .conten-to hr {
+            margin-top: 10px;
+        }
+
+        .sport {
+            display: flex;
+        }
+
+        .sport img {
+
+            width: 222px;
+            height: 134px;
+        }
+
+        .sport {
+            margin-top: 20px;
+        }
+
+        .sport-1 {
+            cursor: pointer;
+            display: flex;
+        }
+
+        .conten-sport-1:hover h4 {
+            color: rgb(12, 181, 193);
+        }
+
+        .conten-sport-1 {
+
+            margin-left: 5px;
+            width: 208px;
+            height: 154px;
+        }
+
+        .conten-sport-1 p {
+            margin-top: 5px;
+        }
+
+        .sport-1>hr {
+
+            margin-left: 10px;
+        }
+
+        .conten-sport-2 {
+
+            margin-left: 10px;
+            width: 208px;
+            height: 154px;
+        }
+
+        .conten-sport-2:hover h4 {
+            color: rgb(12, 181, 193);
+        }
+
+        .conten-sport-2 p {
+            margin-top: 5px;
+        }
+
+        .sport-2-noidung-1 {
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .sport-2-noidung-1 h4 {
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            margin-left: 15px;
+            font-weight: lighter;
+        }
+
+        .sport-2-noidung-1 h4:hover {
+            color: rgb(12, 181, 193);
+        }
+
+        .bangdabanh {
+            text-align: center;
+        }
+
+        /*end main*/
+        .end {
+            margin-bottom: 10px;
+        }
+
+        .end>hr {
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 15px;
+            border-color: #c8c6c6;
+            margin-top: 27px;
+        }
+
+        li.item-menu {
+            list-style: none;
+            color: black;
+        }
+
+        li.item-menu:hover {
+            text-decoration: underline;
+        }
+
+        ul.list-menu-footer {
+            display: inline-block;
+            padding-right: 90px;
+            margin-top: 22px;
+            line-height: 29px;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            width: 100%;
+            height: auto;
+            clear: both;
+            color: rgb(255, 255, 255);
+            display: block;
+            bottom: 0;
+        }
+
+        .lienhe {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(2, 28, 122);
+        }
+
+        .duoi {
+            width: 100%;
+            height: 40px;
+            padding-top: 20px;
+        }
+
+        /*end footer*/
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../img/FPT_Polytechnic.png" alt="Ảnh logo fpt">
+        </div>
+        <div class="tieude">
+            <h1>TIN TỨC</h1>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Trang chủ</a>
+            <a href="tinmoi.html">Tin mới</a>
+            <a href="dangnhap.html">Đăng nhập</a>
+        </div>
+    </div>
+    <!--end header-->
+    <div class="main-content">
+        <div class="conten">
+            <div class="conten-main">
+                <div class="anh"><img
+                        src="https://i1-vnexpress.vnecdn.net/2023/02/21/5563187178137267667aNga-167693-5453-3972-1676936548.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=uhy04ic5v2MZuIeV6p6ZHA"
+                        alt="Ảnh"></div>
+                <div class="noidung">
+                    <h3><a href="#">Nga lên tiếng về chuến thăm Kive của tổng thống Bbiden</a></h3>
+                    <p>Ông Medvedev cho biết Tổng thống Mỹ nhận đảm bảo an ninh từ Nga trước khi tới Kiev, đồng thời chỉ
+                        trích chuyến thăm này.</p>
+
+                </div>
+                <hr>
+                <div class="ad"><img src="./img/da banh.jpg" alt="Ảnh"></div>
+            </div>
+            <div class="conten-extra">
+                <div class="conten-phu-1">
+                    <h4><a href="#">Mỹ lên kế hoạch cho chuyến thăm Ukraine của ông Biden như thế nào</a></h4>
+                    <p>Chuyên cơ của Tổng thống Mỹ cất cánh vào rạng sáng đưa ông đến Ukraine, sau nhiều tháng đội ngũ
+                        cố vấn đánh giá rủi ro an ninh</p>
+                </div>
+                <hr>
+                <div class="conten-phu-2">
+                    <h4><a href="#">Văn Quyết giúp Hà Nội thắng CAHN</a></h4>
+                    <p>HÀ NỘI Cú đúp của tiền đạo Nguyễn Văn Quyết giúp chủ nhà Hà Nội thắng tân binh Công An Hà Nội
+                        2-0, ở vòng hai V-League 2023 hôm 9/2. </p>
+
+
+                </div>
+                <hr>
+                <div class="conten-phu-3">
+                    <h4><a href="#">Xavi: 'Lewandowski bị quá tải'</a></h4>
+                    <p>TÂY BAN NHA HLV Barca lo lắng vì tiền đạo Robert Lewandowski sa sút thể lực trước chuyến làm
+                        khách trên sân Man Utd tại Europa League.</p>
+
+
+                </div>
+            </div>
+            <div class="cuoi">
+                <hr>
+            </div>
+        </div>
+        <div class="conten-extra-2">
+            <div class="phu-conten-extra">
+                <h4>6 cựu CSGT bị bắt do sai phạm khi kiểm tra nồng độ cồn</h4>
+                <p>HẢI DƯƠNG6 cựu cán bộ Đội Cảnh sát giao thông - trật tự, Công an thành phố Chí Linh bị bắt với
+                    cáo
+                    buộc có sai phạm khi kiểm tra nồng độ cồn.</p>
+                <hr>
+            </div>
+            <div class="phu-conten-extra">
+                <h4>Việt Nam lên tiếng về phán quyết của Hàn Quốc liên quan vụ thảm sát Quảng Nam</h4>
+                <p>Việt Nam theo dõi phán quyết của tòa án Seoul liên quan đến vụ thảm sát do lính Hàn Quốc thực
+                    hiện ở
+                    Quảng Nam năm 1968 và coi trọng bảo vệ quyền lợi công dân. </p>
+                <hr>
+            </div>
+            <div class="phu-conten-extra">
+                <h4>Thủ đoạn thông thầu của Chủ tịch NSJ Group Hoàng Thị Thúy Nga</h4>
+                <p>TP HCMChủ tịch NSJ Group Hoàng Thị Thúy Nga nhờ Phó chủ tịch Cần Thơ tác động, chi tiền cho lãnh
+                    đạo
+                    Sở Y tế, để được trúng 4 gói thầu với giá đã nâng khống. </p>
+                <hr>
+            </div>
+            <div class="phu-conten-extra">
+                <h4>Người Việt tại Thổ Nhĩ Kỳ chung tay hỗ trợ nạn nhân động đất</h4>
+                <p>Cộng đồng người Việt ở Thổ Nhĩ Kỳ đã phát động chiến dịch quyên góp nhu yếu phẩm, quần áo để hỗ
+                    trợ
+                    người dân nước này vượt qua thảm họa động đất kinh hoàng </p>
+            </div>
+        </div>
+        <div class="conten-to">
+            <div class="sport">
+                <div class="sport-1">
+                    <img src="https://i1-thethao.vnecdn.net/2023/02/20/messi-jpeg-1676882052-9213-1676882166.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=RkoNVOyFWJYcevhR3Y92Kw"
+                        alt="anh">
+                    <div class="conten-sport-1">
+                        <h4>Messi bị chấm điểm 5</h4>
+                        <p>Ghi bàn quyết định giúp PSG thắng Lille 4-3 ở phút 95, nhưng siêu sao Lionel Messi chỉ được
+                            báo Pháp L'Équipe chấm điểm 5 trên thang 10.</p>
+                    </div>
+                    <hr>
+                    <div class="conten-sport-2">
+                        <h4>Ronaldo: 'Tôi hạnh phúc hơn vì Al Nassr thắng'</h4>
+                        <p>ARAB SAUDIThủ quân Cristiano Ronaldo cho rằng cú poker không khiến anh vui mừng hơn so
+                            với
+                            chiến ...</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sport-2-noidung-1">
+                <h4><b>UBND Hà Nội: Số đông chọn thi ba môn vào lớp 10</b></h4>
+                <h4><b>Tên nào được đặt cho nhiều huyện nhất cả nước?</b></h4>
+                <h4><b>Học viện Kỹ thuật mật mã đổi cách cộng điểm ưu tiên IELTS</b></h4>
+            </div>
+
+
+        </div>
+    </div>
+    <!--end main-->
+    <div class="footer">
+        <div class="end">
+            <hr>
+            <ul class="list-menu-footer">
+                <li class="item-menu">Trang chủ</li>
+                <li class="item-menu">Video</li>
+                <li class="item-menu">Podcasts</li>
+                <li class="item-menu">Ảnh</li>
+                <li class="item-menu">Infographics</li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">Thời sự</li>
+                <li class="item-menu">Góc nhìn </li>
+                <li class="item-menu">Thế giớ</li>
+                <li class="item-menu">kinh doanh</li>
+                <li class="item-menu">Giải trí</li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">Thể thao</li>
+                <li class="item-menu">Pháp luật</li>
+                <li class="item-menu">Giáo dục</li>
+                <li class="item-menu">Sức khỏe</li>
+                <li class="item-menu">Đời sống</li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">Rạo vặt</li>
+                <li class="item-menu">Starsup</li>
+                <li class="item-menu">Mua ảnh</li>
+                <li class="item-menu">eBox</li>
+                <li class="item-menu">ework</li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">Khoa học</li>
+                <li class="item-menu">Số hóa</li>
+                <li class="item-menu">Xe</li>
+                <li class="item-menu">Ý kiến</li>
+                <li class="item-menu">Tâm sự</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="lienhe">
+            <p class="duoi">
+                Email liên hệ:buibaoduyxs234@gmail.com <br>
+                Sđt:0359905982
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

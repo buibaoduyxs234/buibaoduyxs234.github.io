@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background-color: rgb(2, 28, 122);
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo {
+            width: 25%px;
+            float: left;
+            padding-top: 8px;
+            padding-left: 16px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .tieude {
+            width: 25%;
+            float: left;
+            color: white;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .menu {
+            float: right;
+            width: 30%;
+            text-align: right;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: large;
+            text-transform: uppercase;
+            line-height: 80px;
+        }
+
+        a:hover {
+            color: rgb(74, 213, 167);
+        }
+
+        .main-content {
+            text-align: justify;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(251, 251, 251);
+        }
+
+        .left-content {
+            width: 800px;
+            float: left;
+            height: 400px;
+        }
+
+        .right-content {
+            width: 400px;
+            float: right;
+            height: 400px;
+            padding: 20px 20px 0 20px;
+        }
+
+        .tinmoi {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            display: flex;
+        }
+
+        .tin1 {
+            float: left;
+            width: 390px;
+            height: 200px;
+            padding: 20px 5px 0 20px;
+        }
+
+        .tin2 {
+            float: right;
+            width: 390px;
+            height: 200px;
+            padding: 20px 20px 0 15px;
+        }
+
+        .tin3 {
+            float: right;
+            width: 390px;
+            height: 200;
+            padding: 20px 20px 0 1px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        hr {
+            color: black;
+        }
+
+        .kinhdoanh {
+            width: 100%;
+            height: auto;
+        }
+
+        .imgkd {
+            width: 300px;
+            height: 180px;
+            float: left;
+        }
+
+        .kd1 {
+            width: 600px;
+            height: 180px;
+            float: left;
+            padding: 0 15px 0 15px;
+        }
+
+        aside {
+            width: 300px;
+            height: 180px;
+            float: right;
+            background-color: rgb(210, 231, 231);
+            padding: 20px 0 0 30px;
+        }
+
+        .kinhdoanh .akd h3 {
+            padding: 5px 0px 5px 0px;
+            height: 30px;
+        }
+        .end {
+            margin-bottom: 10px;
+        }
+
+        .end>hr {
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 15px;
+            border-color: #c8c6c6;
+            margin-top: 27px;
+        }
+
+        li.item-menu {
+            list-style: none;
+            color: black;
+        }
+
+        li.item-menu:hover {
+            text-decoration: underline;
+        }
+
+        ul.list-menu-footer {
+            display: inline-block;
+            padding-right: 90px;
+            margin-top: 22px;
+            line-height: 29px;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            width: 100%;
+            height: auto;
+            clear: both;
+            color: rgb(255, 255, 255);
+            display: block;
+            bottom: 0;
+        }
+        .lienhe{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(2, 28, 122);
+        }
+        .duoi{
+            width: 100%;
+            height: 40px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/FPT_Polytechnic.png" alt="Ảnh logo fpt">
+        </div>
+        <div class="tieude">
+            <h1>TIN TỨC</h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="/pages/tinmoi.html">Tin mới</a>
+            <a href="/pages/dangnhap.html">Đăng nhập</a>
+        </div>
+    </div>
+    <!--end header-->
+    <div class="main-content">
+        <div class="left-content">
+            <img width="780px" height="400px"
+                src="https://i1-vnexpress.vnecdn.net/2023/01/15/toyo-2-3756-1673713370-1673716-9463-8400-1673716792.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=_JJyIiyMgvZMbsyJ2TJalQ"
+                alt="Ảnh nguồn vnexpress">
+        </div>
+        <div class="right-content">
+            <h4><a href="/pages/tintuc.html">Thưởng Tết 'có như không'</a></h4>
+            <p>
+                TP HCMLấy lý do khó khăn, pháp luật không quy định, doanh nghiệp thưởng Tết 50.000-100.000 đồng nhưng
+                công nhân cho rằng "thà đừng thưởng, mang tiếng". <br>
+                Nhận thông tin công ty sẽ thưởng 100.000 đồng cho tất cả lao động làm iệc dưới một năm, anh Nguyễn Văn
+                Huy, có 10 tháng làm việc tại nhà máy Toyo Precision ở Khu chế xuất Tân Thuận (quận 7), khá sốc. <br>
+                Từng trải qua hai công ty, đây là lần đầu anh nghe đến mức thưởng 100.000 đồng.
+            </p>
+        </div><br>
+        <hr>
+        <div class="tinmoi">
+            <div class="tin1">
+                <h4><a href="#">Những ngày hỗn loạn cuối nhiệm kỳ phó tổng thống của ông Biden</a></h4>
+                <p>Ông Biden bận rộn tới những ngày cuối cùng trong nhiệm kỳ phó tổng thống năm 2017, khiến quá trình xử
+                    lý
+                    tài liệu trở nên hỗn loạn và gấp gáp.
+                </p>
+            </div>
+            <div class="tin2">
+                <h4><a href="#">Chủ tịch nước: Kiều bào là chất xúc tác cho thành công đối ngoại</a></h4>
+                <p>Chủ tịch nước Nguyễn Xuân Phúc đánh giá cao đóng góp của kiều bào cho công cuộc xây dựng đất nước và
+                    thành công đối ngoại của Việt Nam khi dự chương trình Xuân Quê hương 2023.</p>
+
+            </div>
+            <div class="tin3">
+                <h4><a href="#">Bộ Tài chính đề xuất giảm tiếp 30% tiền thuê đất năm nay</a></h4>
+                <p>Mức giảm tiền thuê đất năm nay được đề xuất tương đương năm ngoái, tức giảm 30% tiền thuê đất phải
+                    nộp
+                    cho các doanh nghiệp, hộ gia đình, cá nhân.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="kinhdoanh">
+            <a class="akd" href="#">
+                <h3>Kinh doanh</h3>
+            </a>
+            <div class="tintucKd">
+                <p class="imgkd"><img width="300px" height="150px"
+                        src="https://i1-kinhdoanh.vnecdn.net/2023/02/10/326781392720665256374977379878-3305-8171-1676027439.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=nEMfNPH4-6-SKFgthO-uPA"
+                        alt="ảnh nguồn vnexpress"></p>
+                <p class="kd1">
+                    <b>Chủ tịch HĐQT Chứng khoán VIX từ nhiệm sau 3 tháng</b><br>
+                    Bà Nguyễn Thị Tuyết vừa có đơn xin từ nhiệm vị trí Chủ tịch Hội đồng quản trị Công ty Chứng khoán
+                    VIX sau hơn ba tháng được bổ nhiệm.
+                    Hội đồng quản trị Công ty Chứng khoán VIX vừa họp và thông qua việc từ nhiệm vị trí Chủ tịch của bà
+                    Nguyễn Thị Tuyết theo nguyện vọng cá nhân, kể từ ngày 10/2.
+                    Bà Tuyết được bầu làm Chủ tịch Hội đồng quản trị VIX nhiệm kỳ 2021 - 2026 cách đây ba tháng, ngày
+                    2/11/2022. Cá nhân này, đồng thời, cũng là cổ đông nắm giữ 21,4 triệu cổ phiếu VIX, tương đương
+                    3,67% vốn.
+                </p>
+                <aside>
+                    <ul>
+                        <li><a href="#">Quốc tế</a></li>
+                        <li><a href="#">Doanh nghiệp</a></li>
+                        <li><a href="#">Chứng khoáng</a></li>
+                        <li><a href="#">Bất động sản</a></li>
+                        <li><a href="#">Bảo hiểm</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <hr>
+        <div class="kinhdoanh">
+            <a class="akd" href="#">
+                <h3>Thể Thao</h3>
+            </a>
+            <div class="tintucKd">
+                <p class="imgkd"><img width="300px" height="150px"
+                        src="https://i1-thethao.vnecdn.net/2023/02/11/fifa-the-best-jpeg-1676055477-3610-1676055531.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=UFvnS-vG0UgDitzfea37YQ"
+                        alt="ảnh nguồn vnexpress"></p>
+                <p class="kd1">
+                    <b>Messi, Mbappe tranh giải The Best FIFA</b><br>
+                    Tiền đạo Lionel Messi, Karim Benzema và Kylian Mbappe là ba cầu thủ nam cuối cùng tranh giải cầu thủ
+                    hay nhất, theo thông báo của FIFA tối 10/2.
+                    Chủ nhân FIFA The Best 2022 một trong ba cầu thủ gồm Quả Bóng Vàng 2022 Benzema, Bóng Vàng World Cup
+                    2022 Messi và Giày Vàng World Cup Mbappe. Họ đều đã hoặc đang chơi bóng ở Pháp, sở hữu nhiều danh
+                    hiệu tập thể lẫn thành tích cá nhân trong năm qua. Chủ nhân giải sẽ được công bố trong lễ trao ngày
+                    27/2/2023 tại Paris, Pháp..
+                </p>
+                <aside>
+                    <ul>
+                        <li><a href="#">Bóng đá</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Marathon</a></li>
+                        <li><a href="#">Bơi lội</a></li>
+                        <li><a href="#">Lịch thi đấu</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <hr>
+        <div class="kinhdoanh">
+            <a class="akd" href="#">
+                <h3>Giải trí</h3>
+            </a>
+            <div class="tintucKd">
+                <p class="imgkd"><img width="300px" height="150px"
+                        src="https://i1-giaitri.vnecdn.net/2023/02/10/327372338-3484083321858496-858-2446-1541-1676003666.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=ZH77Zp_AiV5oMIfeBZOXJw"
+                        alt="ảnh nguồn vnexpress"></p>
+                <p class="kd1">
+                    <b>'Record of Ragnarok 2': Cuộc chiến sinh tử giữa người và thần</b><br>
+                    Loạt phim được chuyển thể từ bộ manga cùng tên của Shinya Umemura và Takumi Fukui do Ajichika vẽ
+                    minh họa. Câu chuyện mở đầu bằng cuộc họp của Thần Giới gồm các vị thần từ nhiều nơi như Hy Lạp, Ấn
+                    Độ, Bắc Âu. Họ cùng thảo luận để đưa ra quyết định về số phận con người. Khi các vị thần lựa chọn sẽ
+                    tiêu diệt nhân loại bởi những thói hư tật xấu và hiểm họa họ đã gây ra, Brunhilde - một trong 13 á
+                    thần Valkyries - đề xuất cuộc chiến Ragnarok nhằm thử thách con người lần cuối.
+                </p>
+                <aside>
+                    <ul>
+                        <li><a href="#">Giới sao</a></li>
+                        <li><a href="#">Phim mới</a></li>
+                        <li><a href="#">Ca nhạc</a></li>
+                        <li><a href="#">Thời trang</a></li>
+                        <li><a href="#">Sách</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <hr>
+        <div class="kinhdoanh">
+            <a class="akd" href="#">
+                <h3>Sức Khỏe</h3>
+            </a>
+            <div class="tintucKd">
+                <p class="imgkd"><img width="300px" height="150px"
+                        src="https://i1-suckhoe.vnecdn.net/2023/02/10/nha-thuoc-8083-1676020661-1676-1226-1672-1676040472.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=QESZb47RnJlxHYjkIwC5fw"
+                        alt="ảnh nguồn vnexpress"></p>
+                <p class="kd1">
+                    <b>Nhà thuốc bệnh viện đóng cửa ba tháng do không tuyển được nhân viên</b><br>
+                    Trưởng Khoa Dược Vật tư y tế kiêm trách nhà thuốc Bệnh viện Da liễu Nghệ An nghỉ việc từ tháng
+                    11/2022, nhà thuốc đóng cửa đến nay do không tuyển được nhân sự thay thế.
+                    Ngày 10/2, ông Huỳnh Phúc Sơn, Giám đốc Bệnh viện Da liễu Nghệ An, cho biết ba tháng qua, sau khi
+                    trưởng khoa Dược nghỉ việc, đơn vị không có nhân sự khác đủ điều kiện quản lý nhà thuốc. Trong khi
+                    đó, đề án sử dụng tài sản công vào mục đích kinh doanh, cho thuê, liên doanh, liên kết chưa được
+                    UBND tỉnh phê duyệt. "Do đó nhà thuốc tạm đóng cửa".
+                </p>
+                <aside>
+                    <ul>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Dinh dưỡng</a></li>
+                        <li><a href="#">Khỏe đẹp</a></li>
+                        <li><a href="#">Các bệnh</a></li>
+                        <li><a href="#">Di chứng Covid</a></li>
+                        <li><a href="#">Vaccine</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <hr>
+        <div class="kinhdoanh">
+            <a class="akd" href="#">
+                <h3>Đời Sống</h3>
+            </a>
+            <div class="tintucKd">
+                <p class="imgkd"><img width="300px" height="150px"
+                        src="https://i1-giadinh.vnecdn.net/2023/02/10/z3982347775611-468a3988c8110cf-1955-4869-1676011987.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=ros27-Pcux8_VWyOSEbTqA"
+                        alt="ảnh nguồn vnexpress"></p>
+                <p class="kd1">
+                    <b>Tại sao anh chị em ruột khác tính nhau?</b><br>
+                    Cùng do cha mẹ sinh ra, được nuôi dạy trong điều kiện môi trường như nhau nhưng những đứa con lại
+                    chẳng mấy giống nhau, thậm chí còn khác nhau một trời một vực.
+                    Cô Laura Horwitz ở Chicago (Mỹ) có ba con trai 24, 21 và 17 tuổi. Trong khi con đầu rất chăm học,
+                    ngăn nắp, hướng ngoại, theo đuổi sự nghiệp điện ảnh và truyền hình thì cậu con thứ hai là người
+                    không thích học, hướng nội, theo nghiệp vận động viên thể hình. Đứa con thứ ba thích nấu ăn và biểu
+                    diễn nghệ thuật, thuộc nhóm trung bình của xu hướng hướng ngoại và tránh các môn thể thao đồng đội
+                    mà anh trai tham gia. "Chúng khác nhau nhiều nhất có thể"
+                </p>
+                <aside>
+                    <ul>
+                        <li><a href="#">Bài học sống</a></li>
+                        <li><a href="#">Tổ ấm</a></li>
+                        <li><a href="#">Nhà</a></li>
+                        <li><a href="#">Tiêu dùng</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <hr>
+        <div class="kinhdoanh">
+            <a class="akd" href="#">
+                <h3>Giáo Dục</h3>
+            </a>
+            <div class="tintucKd">
+                <p class="imgkd"><img width="300px" height="150px"
+                        src="https://i1-vnexpress.vnecdn.net/2023/02/10/HUY-7586-1655440226-1431-1676024598.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=Ne-xQdp3wO3SFe8ih_AgcA"
+                        alt="ảnh nguồn vnexpress"></p>
+                <p class="kd1">
+                    <b>Vật lý được học sinh lớp 10 chọn nhiều nhất</b><br>
+                    Trong hơn 98.100 học sinh lớp 10, cả công lập và ngoài công lập, 68,2% (tương đương 67.000 em) chọn
+                    học môn Vật lý.
+                    Sở Giáo dục và Đào tạo Hà Nội chiều 10/2 cho biết, Vật lý, Tin học là hai môn được học sinh lớp 10
+                    chọn nhiều nhất với tỷ lệ lần lượt là 68,2 và 62,8%.
+                    Ba môn khác cũng được hơn một nửa học sinh chọn gồm Địa lý, Giáo dục kinh tế và pháp luật, Hóa học,
+                    dao động 52-56%. Âm nhạc và Mỹ thuật có tỷ lệ lần lượt 4,2 và 1,8%, bởi hầu hết trường THPT công lập
+                    tại Hà Nội chưa có giáo viên dạy hai môn này.
+                </p>
+                <aside>
+                    <ul>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Chân dung</a></li>
+                        <li><a href="#">Du học</a></li>
+                        <li><a href="#">Giáo dục 4.0</a></li>
+                        <li><a href="#">Trắc nghiệm</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <!--end main-->
+        <div class="footer">
+            <div class="end">
+                <hr>
+                <ul class="list-menu-footer">
+                    <li class="item-menu">Trang chủ</li>
+                    <li class="item-menu">Video</li>
+                    <li class="item-menu">Podcasts</li>
+                    <li class="item-menu">Ảnh</li>
+                    <li class="item-menu">Infographics</li>
+                </ul>
+                <ul class="list-menu-footer">
+                    <li class="item-menu">Thời sự</li>
+                    <li class="item-menu">Góc nhìn </li>
+                    <li class="item-menu">Thế giớ</li>
+                    <li class="item-menu">kinh doanh</li>
+                    <li class="item-menu">Giải trí</li>
+                </ul>
+                <ul class="list-menu-footer">
+                    <li class="item-menu">Thể thao</li>
+                    <li class="item-menu">Pháp luật</li>
+                    <li class="item-menu">Giáo dục</li>
+                    <li class="item-menu">Sức khỏe</li>
+                    <li class="item-menu">Đời sống</li>
+                </ul>
+                <ul class="list-menu-footer">
+                    <li class="item-menu">Rạo vặt</li>
+                    <li class="item-menu">Starsup</li>
+                    <li class="item-menu">Mua ảnh</li>
+                    <li class="item-menu">eBox</li>
+                    <li class="item-menu">ework</li>
+                </ul>
+                <ul class="list-menu-footer">
+                    <li class="item-menu">Khoa học</li>
+                    <li class="item-menu">Số hóa</li>
+                    <li class="item-menu">Xe</li>
+                    <li class="item-menu">Ý kiến</li>
+                    <li class="item-menu">Tâm sự</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="lienhe">
+                <p class="duoi">
+                    Email liên hệ:buibaoduyxs234@gmail.com <br>
+                    Sđt:0359905982
+                </p>
+            </div>
+        </div>
+</body>
+
+</html>
